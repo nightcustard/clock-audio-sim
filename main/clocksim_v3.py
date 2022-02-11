@@ -122,7 +122,7 @@ def main():
 def playmusic(cmd): # https://stackoverflow.com/questions/42877375/pausing-mpg123-through-subprocess-in-python
 	if cmd == 'play':
 		print('Ticks active')
-		p = subprocess.Popen(['mpg123', '--loop', '-1', '/home/pi/audio/GrandfatherClockTick_32mins.mp3'], stdin=master) # plays 'GrandfatherClockTick_32mins.mp3' in a loop until stopped by switch change or shutdown.
+		p = subprocess.Popen(['mpg123', '--loop', '-1', '/home/pi/audio/GrandfatherClockTick_16mins.mp3'], stdin=master) # plays 'GrandfatherClockTick_16mins.mp3' in a loop until stopped by switch change or shutdown.
 	elif cmd == 'reboot':
 		p = subprocess.Popen(['mpg123', '--loop', '-1', '/home/pi/audio/Rebooting.mp3'], stdin=master)
 		time.sleep(5) # Allow time for the file to play
