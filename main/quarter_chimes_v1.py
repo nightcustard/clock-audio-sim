@@ -6,7 +6,7 @@
 
 import subprocess, os
 from datetime import datetime
-import pytz # timezone awareness
+# import pytz # timezone awareness
 
 # chimes tuple (indexed 0 to 2)
 chimes = ('/home/pi/audio/15.mp3', '/home/pi/audio/30.mp3', '/home/pi/audio/45.mp3')
